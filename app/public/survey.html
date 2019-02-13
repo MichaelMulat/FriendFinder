@@ -148,7 +148,7 @@
             <h4 class="alert-heading" id="results-header">Complete the form to reveal your BFF</h4>
             <hr>
             <figure class="figure">
-                <img class="figure-img img-fluid rounded" id="bff-picture">
+                <img class="figure-img img-fluid rounded" id="bff-picture" height="100" width="auto">
                 <figcaption class="figure-caption" id="bff-name"></figcaption>
             </figure>
             
@@ -189,6 +189,8 @@
                     $("#bff-name").text(bestfriendData.name);
                     $("img").attr("src", bestfriendData.photo);
                 });
+
+                
             });
 
 
