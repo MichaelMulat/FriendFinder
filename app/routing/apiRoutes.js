@@ -21,13 +21,17 @@ module.exports = function(app){
         for (i = 0; i < friendsData.length; i++) {
 
             var scoreDifference = 0;
+            
             var currentFriend = friendsData[i];
+            
             for (j = 0; j < currentFriend.scores.length; j++) {
+                
                 scoreDifference += Math.abs(parseInt(currentFriend.scores[j]) - parseInt(newFriendsScores[j]));
             }
 
             if (scoreDifference < smallestDiff) {
                 bestFriend = currentFriend;
+                smallestD0ff = scoreDifference;
             }
 
             console.log(currentFriend.name, scoreDifference);
